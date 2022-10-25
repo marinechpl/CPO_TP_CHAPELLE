@@ -16,9 +16,9 @@ public class TP2_Bieres_CHAPELLE {
      */
     public static void main(String[] args){
         
-        BouteilleBiere Biere1 = new BouteilleBiere ("Cuvée des trolls", 7.0, "Dubuisson");
-        Biere1.lireEtiquette();
-        System.out.println(Biere1);
+        BouteilleBiere Biere1 = new BouteilleBiere ("Cuvée des trolls", 7.0, "Dubuisson"); //création d'une nouvelle référence objet 
+        Biere1.lireEtiquette(); //lecture des infos de l'objet "Biere1"
+        System.out.println(Biere1); // affichage des infos sur Biere1
         
         BouteilleBiere Biere2 = new BouteilleBiere("Leffe", 6.6, "Abbaye de Leffe");
         Biere2.lireEtiquette();
@@ -26,7 +26,7 @@ public class TP2_Bieres_CHAPELLE {
         
         BouteilleBiere Biere3 = new BouteilleBiere ("Heineken", 5.0, "Abbaye de Heineken");
         Biere3.lireEtiquette();
-        Biere3.Décapsuler();
+        Biere3.Décapsuler(); // modif du parametre ouverture -> bière ouverte 
         System.out.println(Biere3);
         
         BouteilleBiere Biere4 = new BouteilleBiere ("Desperados", 9.0, "Abbaye de Desperados");
