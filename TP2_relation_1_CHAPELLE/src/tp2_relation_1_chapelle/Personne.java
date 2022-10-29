@@ -21,4 +21,28 @@ public class Personne {
         nbVoitures=0;
     }
     
+    @Override // renvoie le nom et prénom de la personne 
+    public String toString() {
+        String chaine_a_retourner;
+        chaine_a_retourner = "Prénom : "+prenom+"\nNom : "+nom;
+        return chaine_a_retourner;
+    }
+    
+    public boolean ajouter_voiture ( Voiture voiture_a_ajouter){
+        if (voiture_a_ajouter.proprietaire!=null){
+            return false;          
+        }
+        
+        else if (nbVoitures >= 3){
+            return false ; 
+        }
+        
+        else {
+            liste_voitures[nbVoitures]=voiture_a_ajouter;
+            nbVoitures+=1;
+            voiture_a_ajouter.proprietaire=this;
+            return true;
+        }
+    }
+    
 }

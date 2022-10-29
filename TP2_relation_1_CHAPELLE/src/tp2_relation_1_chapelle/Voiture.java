@@ -20,4 +20,12 @@ public class Voiture {
     puissance = Puissance ;
     }
     
+    @Override
+    public String toString() {
+        String chaine_a_retourner;
+        chaine_a_retourner = "une " + marque+ " "+ modele
+                +" avec une puissance de " + puissance + " CV."; // on veut la chaine qui correspond à l'objet voiture 
+        return chaine_a_retourner;
+    }
 }
+

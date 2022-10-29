@@ -20,10 +20,35 @@ public class TP2_relation_1_CHAPELLE {
     Voiture une2008 = new Voiture ("2008", "Peugeot", 6 ) ;
     Voiture uneMicra = new Voiture ("Micra", "Nissan", 4 ) ;
     
-    Personne bob = new Personne("Bobby", "Sixkiller");
-    Personne reno = new Personne("Reno", "Raines");
+    Personne Bob = new Personne("Bobby", "Sixkiller");
+    Personne Reno = new Personne("Reno", "Raines");
 
-    System.out.println("liste des voitures disponibles "+ uneClio + "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
-
+    System.out.println("liste des voitures disponibles : \n"+ uneClio + "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
+    
+    Bob.liste_voitures [0]=uneClio;
+    Bob.liste_voitures[1]=une2008;
+    Bob.nbVoitures = 2 ;
+    uneClio.proprietaire = Bob ;
+    une2008.proprietaire=Bob;
+    
+    Reno.liste_voitures[0]=uneMicra;
+    Reno.nbVoitures=1;
+    uneMicra.proprietaire=Reno;
+    
+    Reno.ajouter_voiture(uneAutreClio);
+    
+    
+    
+    
+    System.out.println(
+            "la premiere voiture de Bob est " + Bob.liste_voitures[0] 
+            + " Sa deuxieme voiture est " + Bob.liste_voitures[1] ) ;
+    System.out.println(
+            "la premiere voiture de Reno est " + Reno.liste_voitures[0] 
+            + " Sa deuxieme voiture est " + Reno.liste_voitures[1] 
+            + "(" + Reno.nbVoitures + ")") ;
+    
+    
     }
+    
 }
