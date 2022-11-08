@@ -20,34 +20,10 @@ public class Armes {
             attaque = 0 ;
         }
     }
-    
-    public class épée extends Armes {
-        int finesse;
-        
-        public épée (String unNom, int attaque, int finS){
-            super(unNom, attaque);
-            finesse = finS;
-            if (finS >= 100) {
-                finS = 0 ;
-            }
-        }   
-    } 
-    
-    public class bâton extends Armes {
-        int âge;
-        
-        public bâton (String unNom, int attaque, int Age){
-            super(unNom, attaque);
-            âge = Age ;
-            if (Age >= 100){
-                Age = 0 ; 
-            }
-        }
-    }
     @Override
     public String toString() { 
     String chaine_a_retourner;
-    chaine_a_retourner = nom + niveau_attaque ;
+    chaine_a_retourner = "Arme : "+ nom + "; Niveau d'attaque : " + niveau_attaque ;
     return chaine_a_retourner ;
     }
     
