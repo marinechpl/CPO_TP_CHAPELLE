@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_chapelle;
+package Armes;
 
 /**
  *
@@ -20,12 +20,12 @@ public class Armes {
             attaque = 0 ;
         }
     }
+
     @Override
-    public String toString() { 
-    String chaine_a_retourner;
-    chaine_a_retourner = "Arme : "+ nom + "; Niveau d'attaque : " + niveau_attaque ;
-    return chaine_a_retourner ;
+    public String toString() {
+        return "Armes(" + "nom=" + nom + ", niveau_attaque=" + niveau_attaque + ')';
     }
+   
     
     
     
